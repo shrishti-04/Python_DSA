@@ -2,8 +2,8 @@
 # python, java, C++, python, javascript,
 # java, python, java, C++, C
 
-# classroom = {'Python', 'Java', 'C++', 'Python', 'Javascript', 'Java', 'Python', 'Java', 'C++', 'C'}
-# print(len(classroom), 'classrooms are needed for students')
+classroom = {'Python', 'Java', 'C++', 'Python', 'Javascript', 'Java', 'Python', 'Java', 'C++', 'C'}
+print(len(classroom), 'classrooms are needed for students')
 
 # Figure out the way to store 9 & 9.0 as separate values in the set.
 

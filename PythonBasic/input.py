@@ -5,7 +5,7 @@ b = int(input('Enter your second number:'))
 
 c = a + b
 
-# print(c)
+print(c)
 
 # WAP to input side of a square and print its area.
 

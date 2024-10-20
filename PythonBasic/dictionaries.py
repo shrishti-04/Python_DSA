@@ -2,10 +2,10 @@
 # table: 'a piece of furniture', 'list of facts & figures'
 # cat: 'a small animal'
 
-# dict = {'table': ['a piece of furniture', 'list of facts & figures'],
-#         'cat': 'a small animal'}
+dict = {'table': ['a piece of furniture', 'list of facts & figures'],
+        'cat': 'a small animal'}
 
-# print(dict)
+print(dict)
 
 # WAP to enter marks of 3 subjects from the user and store them in a dictionary.
 # Start with an empty dictionary & add one by one. Use subject names as key & mark as value.

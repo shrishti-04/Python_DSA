@@ -1,31 +1,31 @@
 # Print the array in the form of 2d matrix
 
-# arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# row = len(arr)
-# col = len(arr[0])
+arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+row = len(arr)
+col = len(arr[0])
 
-# for i in range(row):
-#     for j in range(col):
-#         print(arr[i][j], end=' ')
-#     print('')
+for i in range(row):
+    for j in range(col):
+        print(arr[i][j], end=' ')
+    print('')
 
 # Print the left and right diagonal
 
-# arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-# row = len(arr)
-# col = len(arr[0])
+arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+row = len(arr)
+col = len(arr[0])
 
-# for i in range(row):
-#     for j in range(col):
-#         if(i == j):
-#             print(arr[i][j], end=' ')
+for i in range(row):
+    for j in range(col):
+        if(i == j):
+            print(arr[i][j], end=' ')
             
-# print('')
+print('')
     
-# for i in range(row):
-#     for j in range(col):
-#         if((i+j) == (row-1) and i != j):
-#             print(arr[i][j], end=' ')
+for i in range(row):
+    for j in range(col):
+        if((i+j) == (row-1) and i != j):
+            print(arr[i][j], end=' ')
 
 # Print the boundary elements
 
