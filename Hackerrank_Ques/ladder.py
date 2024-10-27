@@ -30,3 +30,13 @@ n = int(input('Enter your number: '))
 for i in range(n):
     print(' '*(n-i), end='')
     print('#' * (i+1))
+    
+# another method which is also valid
+
+n = int(input('Enter your number: '))
+
+for i in range(n):
+    print(' '*(n-i), end='')
+    for j in range(i+1):
+        print('#', end='')
+    print('')
