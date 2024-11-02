@@ -28,7 +28,7 @@
 def timeConversion(s):
     if(s[-2:] == 'AM'):
         if(s[:2] == '12'):
-            return '00'+s[2:]
+            return '00'+s[2:8]
         else:
             return s[:8]
         
