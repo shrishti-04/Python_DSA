@@ -40,3 +40,5 @@ def timeConversion(s):
             return str(num) + s[2:8]
         
 print(timeConversion('02:00:00PM'))
+print(timeConversion('12:00:00AM'))
+print(timeConversion('01:00:00AM'))
