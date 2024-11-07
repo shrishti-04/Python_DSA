@@ -1,3 +1,5 @@
+# to find the frequency of the element in array.
+
 arr = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5]
 n = len(arr)
 vis = [False    for i in range(n)]

@@ -1,3 +1,5 @@
+# to find the frequency of the element in array using hashing
+
 n = int(input())
 array = []
 hash_array = [0] * 51

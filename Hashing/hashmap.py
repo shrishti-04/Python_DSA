@@ -1,3 +1,5 @@
+# to find the frequency of the element in array using hashmap.
+
 from collections import defaultdict
 
 n = int(input())
