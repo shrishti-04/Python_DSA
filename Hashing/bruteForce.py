@@ -20,4 +20,4 @@ for i in range(n):
         print(arr[i], '->', count)
         
 # Here time complexity will be
-# O(N^3)
+# O(N^2)
