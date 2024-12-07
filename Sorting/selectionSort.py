@@ -1,4 +1,4 @@
-# Psuedo code
+# code
 
 def selectionSort(arr):
     n = len(arr)
