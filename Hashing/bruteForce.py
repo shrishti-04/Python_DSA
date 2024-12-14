@@ -19,5 +19,18 @@ for i in range(n):
         
         print(arr[i], '->', count)
         
-# Here time complexity will be
-# O(N^2)
+# # Here time complexity will be
+# # O(N^2)
+
+# Another easy method
+
+def freq(arr):
+    n = int(input('Enter your number: '))
+    count = 0
+    for i in range(len(arr)):
+        if(arr[i] == n):
+            count += 1
+    
+    print(n, '->', count)
+
+freq([1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 11])
