@@ -11,7 +11,7 @@ for i in range(n):
     arr.append(num)
     hash_arr[num] += 1
     
-q = 0
+q = int(input())
 
 for i in range(q):
     query = int(input())
