@@ -15,53 +15,55 @@
 
 # Brute Force
 
+# def minMaxFreq(arr):
+#     n = len(arr)
+#     min_count = float('inf')
+#     max_count = 0
+#     min_ele = None
+#     max_ele = None
+
+#     for i in range(n):
+#         count = 0
+#         for j in range(i, n):
+#             if(arr[i] == arr[j]):
+#                 count += 1
+
+#         if(count < min_count):
+#             min_count = count
+#             min_ele = arr[i]
+
+#         if(count > max_count):
+#             max_count = count
+#             max_ele = arr[i]
+
+#     print('Minimum Frequency: ', min_count, 'whose element is: ', min_ele)
+#     print('Maximum Frequency: ', max_count, 'whose element is: ', max_ele)
+
+# minMaxFreq([5, 3, 3, 3, 1, 1])
+
+# Hashing Method
+
 def minMaxFreq(arr):
-    n = len(arr)
+
+    hash_arr = {}
     min_count = float('inf')
-    max_count = 0
-    min_ele = None
-    max_ele = None
+    max_count = float('-inf')
+    min_ele = 0
+    max_ele = 0
 
-    for i in range(n):
-        count = 0
-        for j in range(i, n):
-            if(arr[i] == arr[j]):
-                count += 1
+    for i in arr:
+        hash_arr[i] = hash_arr.get(i, 0) + 1
 
-        if(min_count > count):
+    for i, count in hash_arr.items():
+        if(count < min_count):
             min_count = count
-            min_ele = arr[i]
+            min_ele = i
 
-        if(max_count < count):
+        if(count > max_count):
             max_count = count
-            max_ele = arr[i]
+            max_ele = i
 
     print('Minimum Frequency: ', min_count, 'whose element is: ', min_ele)
     print('Maximum Frequency: ', max_count, 'whose element is: ', max_ele)
 
-minMaxFreq([5, 3, 3, 3, 1, 1])
-
-# n = int(input('Enter array length: '))
-# arr = []
-# hash_arr = {}
-# maxiFreq = float('-inf')
-# maxiEle = 0
-# miniFreq = float('inf')
-# miniEle = 0
-
-# for i in range(n):
-#     num = int(input('Enter your element: '))
-#     arr.append(num)
-#     hash_arr[num] = hash_arr.get(num, 0) + 1
-
-# for num, freq in hash_arr.items():
-#     if(freq >= maxiFreq):
-#         maxiFreq = freq
-#         maxiEle = num
-
-#     elif(freq <= miniFreq):
-#         miniFreq = freq
-#         miniEle = num
-
-# print("Max frequency element: " + str(maxiEle) + " with frequency: " + str(maxiFreq))
-# print("Min frequency element: " + str(miniEle) + " with frequency: " + str(miniFreq))
+minMaxFreq([1, 3, 3, 3, 5, 1])
