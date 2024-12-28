@@ -23,22 +23,22 @@ main()
 
 # Hashing Method
 
-def contains_nearby_duplicate_optimized(nums, k):
-    num_indices = {}
+def neardis(nums, k):
+    num_dict = {}
 
     for i, num in enumerate(nums):
-        if(num in num_indices and i-num_indices[num] <= k):
+        if(num in num_dict and i - num_dict[num] <= k):
             return True
-        num_indices[num] = i
+        num_dict[num] = i
     return False
 
 def main():
     nums = [1, 1, 3, 1, 2, 3]
     k = 2
 
-    if(contains_nearby_duplicate_optimized(nums, k)):
-        print("There are two equal numbers within distance", k)
+    if(neardis(nums, k)):
+        print('YES')
     else:
-        print("No two equal numbers found within distance", k)
+        print('NO')
 
 main()
