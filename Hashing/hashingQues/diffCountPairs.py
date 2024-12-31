@@ -2,25 +2,25 @@
            
 # Brute Force
 
-# def diffCountPairs(arr, k):
-#     count = 0
-#     n = len(arr)
+def diffCountPairs(arr, k):
+    count = 0
+    n = len(arr)
 
-#     for i in range(n):
-#         for j in range(i+1, n):
-#             if(arr[i]-arr[j] == k):
-#                 count += 1
+    for i in range(n):
+        for j in range(i+1, n):
+            if(arr[i]-arr[j] == k):
+                count += 1
 
-#     return count
+    return count
 
-# def main():
-#     arr = [6, 4, 3, 8, 1, 1, 7, 9]
-#     k = 2
+def main():
+    arr = [6, 4, 3, 8, 1, 1, 7, 9]
+    k = 2
 
-#     count = diffCountPairs(arr, k)
-#     print(count)
+    count = diffCountPairs(arr, k)
+    print(count)
 
-# main()
+main()
 
 # Hashing Method
 
