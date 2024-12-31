@@ -3,29 +3,37 @@
 # Brute Force
 
 # def countPairs(arr, k):
+#     n = len(arr)
 #     count = 0
-#     for i in range(len(arr) - 1):
-#         for j in range(i+1, len(arr)):
-#             if(arr[i] + arr[j] == k):
+
+#     for i in range(n):
+#         for j in range(i+1, n):
+#             if(arr[i] + arr[j] == k and arr[i]<arr[j]):
 #                 count += 1
 #     return count
 
-# ans = countPairs([1, 2, 5, 7, 4], 6)
+# ans = countPairs([2, 6, 3, 9, 1, 4, 7], 5)
 # print(ans)
 
 # hashing
 
-def countPairs(arr, k):
+def sumpairs(arr, k):
     count = 0
-    pairs = {}
+    hash_arr = {}
 
     for i in arr:
-        ele = k - i
-        if(ele in pairs):
+        comp = k - i
+        if(comp in hash_arr):
             count += 1
-        pairs[i] = True
+        hash_arr[i] = True
 
     return count
 
-ans = countPairs([1, 2, 5, 7, 4], 6)
-print(ans)
+def main():
+    arr = [3, 4, 7, 5, 2, 8, 1]
+    k = 5
+
+    count = sumpairs(arr, k)
+    print(count)
+
+main()
