@@ -1,27 +1,53 @@
-# Find Sum of Range  [l……….r] where(l<=r) using Prefix sum. 
+# Find Sum of Range  [l……….r] where(l<=r) using Prefix sum.
 
-def calcPrefixSum(arr):
-    hash_arr = {}
-    sum_arr = 0
+# Brute Force approach
 
-    for i in range(len(arr)):
-        sum_arr += arr[i]
-        hash_arr[i] = sum_arr
+def prefixSum(arr, l, r):
+    sums = 0
 
-    return hash_arr
+    for i in range(l, r+1):
+        sums += arr[i]
 
-def rangeSum(l, r, hash_arr):
-    if(l == 0):
-        return hash_arr[r]
-    else:
-        return hash_arr[r] - hash_arr[l-1]
-    
+    return sums
+
 def main():
-    arr = [3, 6, 5, 4, 8, 1]
-    prefix_hash = calcPrefixSum(arr)
-    l = 2
+    arr = [6, 3, 5, 2, 4, 1, 2]
+    l = 1
     r = 5
-    result = rangeSum(l, r, prefix_hash)
-    print(result)
+
+    sums = prefixSum(arr, l, r)
+    print(sums)
+
+main()
+
+# Optimized code: Hashing
+
+# to update prefix array use: prefix_array[i] = prefix_arr[i-1] + array[i],
+# here array[i] is the current value in normal given array and 
+# prefix_arr[i] is value of prefix array which you have created using length of normal array
+
+# to optimise sum we used formulae: prefix_arr[r] - prefix[l-1] to remove all item before l
+# and we can correctly get sum of given limits
+
+def prefixArray(arr):
+    n = len(arr)
+    prefix_array = [0] * n
+
+    for i in range(1, n):
+        prefix_array[i] = prefix_array[i-1] + arr[i]
+
+    return prefix_array
+
+def optimisedSum(prefix_array, l, r):
+    return prefix_array[r] - prefix_array[l-1]
+
+def main():
+    arr = [6, 3, 5, 2, 4, 1, 2]
+    l = 1
+    r = 5
+    prefix_array = prefixArray(arr)
+
+    optiSum = optimisedSum(prefix_array, l, r)
+    print(optiSum)
 
 main()
