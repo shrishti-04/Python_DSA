@@ -1,5 +1,29 @@
 # Find count of number of subarrays with sum ==  k 
 
+# Brute Force Approach
+
+def main():
+    n = int(input('Enter the number of array elements: '))
+    arr = [0]*(n+1)
+    for i in range(1, n+1):
+        arr[i] = int(input('Enter your element for array: '))
+
+    k = int(input('Enter a number which should be equal with subarray sum: '))
+    count = 0
+
+    for j in range(1, n+1):
+        sum_count = 0
+        for i in range(j, 0, -1):
+            sum_count += arr[i]
+            if(sum_count == k):
+                count += 1
+
+    print(count)
+
+main()
+
+# Optimized Solution using Hashing
+
 def countSubarrays(arr, k):
     sum = 0
     count = 0
@@ -11,15 +35,13 @@ def countSubarrays(arr, k):
         sum += i
         if(sum-k in hash_arr):
             count += hash_arr[sum-k]
-        if(sum in hash_arr):
-            hash_arr[sum] += 1
-        else:
-            hash_arr[sum] = 1
+
+        hash_arr[sum] = hash_arr.get(sum, 0) + 1
 
     return count
 
-arr = [3, 4, 5, 1, 3, 7]
-k = 6
+arr = [5, 1, 3, 8, 3, 6, 1]
+k = 4
 
 ans = countSubarrays(arr, k)
 print(ans)
