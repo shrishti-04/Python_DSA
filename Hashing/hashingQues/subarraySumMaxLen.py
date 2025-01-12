@@ -2,25 +2,25 @@
 
 # Brute force approach
 
-# def subarraySumMaxLen(arr, k):
-#     n = len(arr)
-#     max_len = 0
-#     min_len = float('inf')
+def subarraySumMaxLen(arr, k):
+    n = len(arr)
+    max_len = 0
+    min_len = float('inf')
 
-#     for i in range(n):
-#         summ = 0
-#         for j in range(i, n):
-#             summ += arr[j]
-#             if(summ == k and max_len < j-i+1):
-#                 max_len = j-i+1
-#             if(summ == k and min_len > j-i+1):
-#                 min_len = j-i+1
+    for i in range(n):
+        summ = 0
+        for j in range(i, n):
+            summ += arr[j]
+            if(summ == k and max_len < j-i+1):
+                max_len = j-i+1
+            if(summ == k and min_len > j-i+1):
+                min_len = j-i+1
 
-#     print("Max Length: ", max_len)
-#     print("Min Length: ", min_len)
+    print("Max Length: ", max_len)
+    print("Min Length: ", min_len)
 
-# answer = subarraySumMaxLen([1, 4, 10, 3, 1, 2, 2, 1], 5)
-# print(answer)
+answer = subarraySumMaxLen([1, 4, 10, 3, 1, 2, 2, 1], 5)
+print(answer)
 
 # Optimised approach using hashmap
 
@@ -46,8 +46,8 @@ def subarraySumLen(arr, k):
                 max_len = length
                 result = (prefix_arr[x], j)
             
-            if(min_len > length):
-                min_len = length
+            if(min_len > length2):
+                min_len = length2
                 result2 = (prefix_arr2[x], j)
 
         if(prefix_sum not in prefix_arr and prefix_sum not in prefix_arr2):
