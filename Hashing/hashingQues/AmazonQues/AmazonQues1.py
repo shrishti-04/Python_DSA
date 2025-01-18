@@ -45,7 +45,7 @@ def maxSubarraySum(b):
     maxprefix = [0]*(n+2)
     maxprefix[1] = prefixMaxSum[1]
     for i in range(2, n):
-        maxprefix[i] = max(maxprefix[i-1], maxprefix[i])
+        maxprefix[i] = max(maxprefix[i-1], prefixMaxSum[i])
 
     maxsuffix = [0]*(n+2)
     maxsuffix[n] = suffixMaxSum[n]
