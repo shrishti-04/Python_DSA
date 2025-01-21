@@ -1,0 +1,2 @@
+The Two Pointer techniques uses two variables (or two pointer) to move through a list often from
+different directions or different speed to solve problem faster.
