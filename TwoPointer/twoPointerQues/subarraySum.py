@@ -33,7 +33,7 @@ def subarraySum(nums, k):
 
         while(sums >= k):
             sums -= nums[i]
-            i -= 1
+            i += 1
 
         count += j - i + 1
 
