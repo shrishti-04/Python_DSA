@@ -1,0 +1,31 @@
+Binary Search: It is an operation in which we search any element in given array or any string
+from two directions which starts from low to high
+
+┌───┬───┬───┬───┬───┐
+│ 4 │ 2 │ 3 │ 1 │ 2 │
+└───┴───┴───┴───┴───┘
+┌───┬───┬───┬───┬───┐
+│ 1 │ 2 │ 2 │ 3 │ 4 │
+└───┴───┴───┴───┴───┘
+  └───────────────┘
+  │       │       │
+ low     mid     high
+
+So, the array will automatically set in sorted manner from ascending to descending order.
+
+The first half direction will be consider as low, before mid element after which the the elements
+which are coming after mid element will be consider as high which is second half direction.
+
+Formulae for mid element will be: 
+(low + high) // 2, 
+will do floor division.
+
+condition will be consider as, target will be given to find any element from the given element
+Now, if suppose we want to find 3 from the above array, arr, then we will take target as 3
+
+two condition will be consider for searching target
+
+if(target <= arr[mid]):
+    high = mid - 1
+else:
+    low = mid + 1
