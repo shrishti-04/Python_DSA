@@ -4,27 +4,27 @@
 
 # Brute force:
 
-# def minOperations(arr, target):
+def minOperations(arr, target):
 
-#     q = int(input('Enter the number of targets: '))
+    q = int(input('Enter the number of targets: '))
 
-#     for i in range(q):
-#         target = int(input('Enter your target: '))
-#         operations = 0
+    for i in range(q):
+        target = int(input('Enter your target: '))
+        operations = 0
 
-#         for j in range(n):
-#             operations += abs(arr[j] - target)
+        for j in range(n):
+            operations += abs(arr[j] - target)
 
-#     print(operations)
+    print(operations)
 
-# n = int(input('Enter the number of elements in arr: '))
-# arr = []
+n = int(input('Enter the number of elements in arr: '))
+arr = []
 
-# for i in range(n):
-#     arr.append(int(input('Enter arr elements: ')))
+for i in range(n):
+    arr.append(int(input('Enter arr elements: ')))
 
-# target = int(input('Enter your target: '))
-# print(minOperations(arr, target))
+target = int(input('Enter your target: '))
+print(minOperations(arr, target))
 
 # Greedy approach
 
