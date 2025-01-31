@@ -1,3 +1,5 @@
+# This was IBM OA question asked for 20 LPA
+
 # Given an array of size N; and a target 
 # -> find the minimum number of operations needed to make all elements of array equal to target 
 # -> there are multiple target in order of Q
