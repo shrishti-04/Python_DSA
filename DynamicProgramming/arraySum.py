@@ -3,19 +3,19 @@
 
 # Brute Force
 
-# def sumArray(arr):
-#     n = len(arr)
-#     sums = 0
+def sumArray(arr):
+    n = len(arr)
+    sums = 0
 
-#     for i in range(n):
-#         for j in range(i):
-#             sums += arr[i]
+    for i in range(n):
+        for j in range(i):
+            sums += arr[i]
 
-#     return sums
+    return sums
 
-# arr = [2, 3, 2, 2, 1, 1, 2]
-# ans = sumArray(arr)
-# print(ans)
+arr = [2, 3, 2, 2, 1, 1, 2]
+ans = sumArray(arr)
+print(ans)
 
 # Optimised Approach: Dynamic Programming
 
