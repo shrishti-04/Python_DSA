@@ -14,7 +14,8 @@ Or can directly contact me on my phone number: <b>8208705735</b>, or Mail me: <b
 <a href='https://drive.google.com/file/d/1aeUqMf4C_ihuUmtPHHHHyU4Yr3lXlKRO/view?usp=sharing'> Python Basic Notes Part 1 </a> <br>
 <a href='https://drive.google.com/file/d/1ahn2qAJzDGMVM8nWEDiNDfow9u8C8gpd/view?usp=sharing'> Python Basic Notes Part 2 </a>
 
-<h2> <b>Patterns</b> Plays an important role in understanding loops, optimizing iterations, and improving coding logic.</h2>
+<h2>Patterns</h2>
+<p>Plays an important role in understanding loops, optimizing iterations, and improving coding logic.</p>
 <p>Here are my Hand-written notes for Patterns: </p>
 
 <a href='https://drive.google.com/file/d/1agIYj2gU8LehG56b9kaf1MuSgaNCSmJy/view?usp=sharing'> Pattern Notes </a>
