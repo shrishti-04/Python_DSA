@@ -19,3 +19,14 @@ Or can directly contact me on my phone number: <b>8208705735</b>, or Mail me: <b
 <p>Here are my Hand-written notes for Patterns: </p>
 
 <a href='https://drive.google.com/file/d/1agIYj2gU8LehG56b9kaf1MuSgaNCSmJy/view?usp=sharing'> Pattern Notes </a>
+
+<h2>Time Complexity</h2>
+<p>Time complexity shows how the execution time of an algorithm increases as the input size grows.</p>
+
+<a href='https://drive.google.com/file/d/1aqse5dMRQ_cbtPifK6AAdA4r9kyMiG7i/view?usp=sharing'> Time Complexity </a>
+
+<h2>Hashing</h2>
+<p>Hashing is a method of storing and finding data quickly by using a special code (hash) instead of searching through everything.</p>
+<p>Here are my hand written notes on Hashing</p>
+
+<a href='https://drive.google.com/file/d/1azk8kjmRpIp2xbRRZ10oS3lXtk5WDvId/view?usp=sharing'>Hashing Notes</a>
