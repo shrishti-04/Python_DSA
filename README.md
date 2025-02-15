@@ -30,3 +30,37 @@ Or can directly contact me on my phone number: <b>8208705735</b>, or Mail me: <b
 <p>Here are my hand written notes on Hashing</p>
 
 <a href='https://drive.google.com/file/d/1azk8kjmRpIp2xbRRZ10oS3lXtk5WDvId/view?usp=sharing'>Hashing Notes</a>
+
+<h2>Two Pointer</h2>
+<p>Two-pointer is an algorithmic technique where two indices (or pointers) traverse a data structure from different positions to optimize time and space complexity.</p>
+<p>Here are my hand written notes on Two Pointer</p>
+
+<a href='https://drive.google.com/file/d/1eRfth-FtA3R3QYTLX_kmGiRiu3ggqvrJ/view?usp=sharing'>Two Pointer Notes</a>
+
+<h2>Binary Search</h2>
+<p>A search algorithm that repeatedly divides a sorted array in half to find a target element in O(log n) time.</p>
+<p>Here are my hand written notes on Binary Search</p>
+
+<a href='https://drive.google.com/file/d/1eTVi5Dqz7XYOMMgDQt0jNO4_jNMD-ti-/view?usp=sharing'>Binary Search Notes</a>
+
+<h2>Greedy Algorithm</h2>
+<p>A problem-solving approach that makes locally optimal choices at each step to find a globally optimal solution.</p>
+
+<a href='https://drive.google.com/file/d/1eWE6xSBe6AVFbz7ucnw5OdOxSD7-fhpE/view?usp=sharing'>Hashing Notes</a>
+
+<h2>Recursion</h2>
+<p>A technique where a function calls itself to solve smaller subproblems until a base case is reached.</p>
+
+<a href='https://drive.google.com/file/d/1eaCPf4FTIg6il6MnF0cWfafcS09krjrK/view?usp=sharing'>Recursion Notes</a>
+
+<h2>Dynamic Programming</h2>
+<p>An optimization method that solves problems by breaking them into overlapping subproblems and storing their solutions to avoid redundant calculations.</p>
+<p>Here are my hand written notes on Dynamic Programming</p>
+
+<a href='https://drive.google.com/file/d/1eaQUOTm51NWVe89AcBmlOhNrnUwAYlvr/view?usp=sharing'>Hashing Notes</a>
+
+<h2>Graphs</h2>
+<p>A data structure consisting of nodes (vertices) connected by edges, used to represent relationships and networks.</p>
+<p>Here are my hand written notes on Graphs</p>
+
+<a href='https://drive.google.com/file/d/1ecQv1h7a5aTzcW85YZB1XYHfWhSOPB7C/view?usp=sharing'>Hashing Notes</a>
