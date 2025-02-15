@@ -4,7 +4,7 @@
 from collections import deque
 
 n, m = map(int, input('Enter the number of nodes and edges: ').split())
-g = [[] for i in range(n+5)]
+g = [[] for i in range(n+1)]
 
 for i in range(m):
     x, y = map(int, input('Enter the edge: ').split())
