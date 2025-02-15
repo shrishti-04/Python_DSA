@@ -14,7 +14,7 @@
 from collections import deque
 
 n, m = map(int, input().split())
-g =[[] for i in range(n+5)]
+g =[[] for i in range(n+1)]
 
 for i in range(m):
     x, y = map(int, input().split())
@@ -25,9 +25,9 @@ source = int(input('Enter source node: '))
 q = deque()
 q.append(source)
 
-visited = [0] * (n+5)
+visited = [0] * (n+1)
 visited[source] = 1
-level = [0] * (n+5)
+level = [0] * (n+1)
 level[source] = 0
 
 while q:

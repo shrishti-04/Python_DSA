@@ -12,8 +12,8 @@ for i in range(m):
     g[y].append(x)
 
 source = int(input('Enter the source node: '))
-visited = [0]*(n+5)
-parent = [0]*(n+5)
+visited = [0]*(n+1)
+parent = [0]*(n+1)
 
 def dfs(node, g, visited, parent):
     print(node, end=' ')

@@ -13,11 +13,11 @@ for i in range(m):
 q = deque()
 source = int(input('Enter the source node: '))
 q.append(source)
-visited = [0]*(n+5)
+visited = [0]*(n+1)
 visited[source] = 1
-level = [0]*(n+5)
+level = [0]*(n+1)
 level[source] = 0
-ways = [0]*(n+5)
+ways = [0]*(n+1)
 ways[source] = 1
 
 while q:

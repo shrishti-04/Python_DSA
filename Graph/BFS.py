@@ -17,9 +17,9 @@ for i in range(m):
 q = Queue()
 q.put(1)
 
-visited = [0]*(n+5)
+visited = [0]*(n+1)
 visited[1] = 1
-level = [0]*(n+5)
+level = [0]*(n+1)
 level[1] = 0
 
 while not q.empty():
