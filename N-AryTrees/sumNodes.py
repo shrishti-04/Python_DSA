@@ -15,7 +15,7 @@ def dfsSum(node, g, visited, parent, sums, b):
         else:
             s += sums[child]
 
-    sums[node] = b[node] + s
+    sums[node] = b[node] + s 
 
 n = int(input('enter the number of nodes: '))
 g = [[] for _ in range(n+1)]
